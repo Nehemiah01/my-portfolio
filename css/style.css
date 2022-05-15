@@ -88,9 +88,7 @@ a {
 }
 
 .pg-1 nav .info a:hover {
-  background: linear-gradient(115deg, #fc6767, #ec008c);
-  background-color: #4158D0;
-  background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 80%, #FFCC70 100%);
+  background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 60%);
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -158,6 +156,11 @@ a {
   position: relative;
   display: inline-block;
   margin-top: 20vh;
+}
+
+.pg-1 .just-flex .image img:first-of-type {
+  -webkit-transform: scale(0.75) translateY(-2rem);
+          transform: scale(0.75) translateY(-2rem);
 }
 
 .pg-1 .just-flex img {
@@ -250,7 +253,7 @@ a {
 }
 
 .proj .project a, .tab .project a {
-  color: #000;
+  color: #13274F;
 }
 
 .proj .major, .tab .major {
@@ -271,10 +274,37 @@ a {
   font-size: 0.8rem;
 }
 
+.proj .transfer, .tab .transfer {
+  color: #eee;
+  position: absolute;
+  top: 42%;
+  left: 47.5%;
+  display: none;
+  font-size: 2rem;
+}
+
+.proj a, .tab a {
+  position: relative;
+}
+
+.proj a img:hover, .tab a img:hover {
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.proj a:hover .transfer, .tab a:hover .transfer {
+  display: unset;
+}
+
 .proj img, .tab img {
   border-radius: 5px;
   width: 100%;
   margin: auto;
+  position: relative;
 }
 
 .feature {
@@ -550,7 +580,7 @@ footer p:nth-child(2) {
   .feature {
     padding: 10rem 2rem 0 2rem;
   }
-  #about-me {
+  #about {
     padding: 1.2rem 3rem;
   }
   footer {
@@ -799,7 +829,7 @@ footer p:nth-child(2) {
   #main-header p {
     font-size: 12.86vw;
   }
-  #about-me {
+  #about {
     padding: 1.2rem 1.5rem;
   }
   footer {

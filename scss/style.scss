@@ -55,9 +55,7 @@ a {
 .pg-1 {
     padding: $large-screen-padding;
     height: 100vh;
-    background: #0b0b0b;
-    
-    
+    background: #0b0b0b;   
     
     nav {
         display: flex;
@@ -75,10 +73,7 @@ a {
             transition: color 0.3s ease-in-out;
             
             &:hover {
-                background: linear-gradient(115deg, #fc6767, #ec008c); 
-                background-color: #4158D0;
-                background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 80%, #FFCC70 100%);
-                                
+                background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 60%);
                 color: transparent;
                 -webkit-background-clip: text;
             }
@@ -97,7 +92,6 @@ a {
                 background: #eee;
                 cursor: pointer;
                 transition: transform 0.3s ease-out;
-                
             }
             
             &.cancel .bar:first-child {
@@ -112,9 +106,7 @@ a {
                 transform: translateY(-8px) rotate(-45deg);
             }
         }
-
     }
-
 
     .just-flex {
         display: flex;
@@ -132,6 +124,10 @@ a {
             position: relative;
             display: inline-block;
             margin-top: 20vh;
+
+            img:first-of-type {
+                transform: scale(0.75) translateY(-2rem);
+            }
         }
 
         img {
@@ -139,10 +135,6 @@ a {
             height: 300px;
             overflow: hidden;
             position: absolute;
-
-            // &:first-of-type {
-            //     transform: scale(0.75) translateY(-1.6rem);
-            // }
         }
         
     }
@@ -217,7 +209,7 @@ a {
     .project{
         margin: auto 2rem auto 0;
         a{
-            color: #000;
+            color: #13274F;
         }
     }
     
@@ -236,12 +228,38 @@ a {
     .project-details{
         margin-top: 0.8rem;
         font-size: 0.8rem;
+    }  
+
+    .transfer {
+        color: #eee;
+        position: absolute;
+        top: 42%;
+        left: 47.5%;
+        display: none;
+        font-size: 2rem;
     }
+
+    a {
+        position: relative;
+
+        img:hover {
+            transition: filter 0.5s ease;
+            filter: brightness(40%);
+        }
+        
+        &:hover .transfer {
+            display: unset;
+        }
+    }  
+    
     img{
         border-radius: 5px;
         width: 100%;
         margin: auto;
+        position: relative;
+       
     }
+    
 }
 
 .feature {
@@ -469,7 +487,7 @@ footer {
     .feature {
         padding: 10rem 2rem 0 2rem;
     }
-    #about-me {
+    #about {
         padding: 1.2rem 3rem;
     }
     footer {
@@ -661,7 +679,7 @@ footer {
             font-size: 12.86vw;
         }
     }
-    #about-me {
+    #about {
         padding: 1.2rem 1.5rem;
     }
     footer {
