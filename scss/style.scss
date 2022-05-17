@@ -19,6 +19,7 @@ img {
     display: none;
 }
 body {
+    overflow-x: hidden;
     transition: scroll 2s ease-in-out;
 
     &::-webkit-scrollbar {

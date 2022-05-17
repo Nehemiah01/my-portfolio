@@ -18,6 +18,7 @@ img {
 }
 
 body {
+  overflow-x: hidden;
   -webkit-transition: scroll 2s ease-in-out;
   transition: scroll 2s ease-in-out;
 }
