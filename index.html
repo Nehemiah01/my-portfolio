@@ -13,7 +13,7 @@
 </head>
 <body>
     <main>
-        <div class="pg-1">
+        <div class="pg-1" data-aos="fade-in" data-aos-duration="1000">
             <nav>
                 <a href="" class="name desktop-name">Dapo Ola-Olatunji</a>
                 <a href="" class="name mobile-nav">Dapo O.</a>
@@ -81,7 +81,7 @@
         </div>
          
         <div class="feature">
-            <div class="card">
+            <div class="card" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
                 <img src="assets/cardz/responsive-website.webp" alt="">
                 <div>
                     <p class="f-title">Responsive Design</p>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
                 <img src="assets/cardz/rocket-efficient.png" alt="" class="rocket">
                 <div>
                     <p class="f-title 2">Efficient</p>
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
                 <img src="assets/cardz/intuitive uis.png" alt="">
                 <div>
                     <p class="f-title">Intuitive UI</p>
@@ -154,12 +154,16 @@
 
         </div>
 
-        <div id="about" data-aos="fade-up">
+        <div class="f-class" id="about"></div>
+
+        <div class="about" data-aos="fade-up">
             <h3>About me</h3>
 
-            <p><img src="assets/wave.png" alt="" class="wave">Hello, my name is <b>Dapo</b> and I'm a <b>frontend web developer</b>. I'm particular about creating websites with <b>Simple</b>, <b>Responsive</b> and <b>Surreal UIs</b>. I use the technologies stated below in bringing beautifully crafted designs to life.</p>
+            <p id="skills"><img src="assets/wave.png" alt="" class="wave">Hello, my name is <b>Dapo</b> and I'm a <b>frontend web developer</b>. I'm particular about creating websites with <b>Simple</b>, <b>Responsive</b> and <b>Surreal UIs</b>. I use the technologies stated below in bringing beautifully crafted designs to life.</p>
 
-            <div class="stack" id="skills" data-aos="fade-up">
+            <!-- <div class="f-class"></div> for some reason this div isn't effective for it's purpose as this -->
+
+            <div class="stack" data-aos="fade-up">
                 <h4>My stack</h4>
 
                 <div class="skills">
@@ -198,9 +202,9 @@
             
         </div> 
 
-       
+        <div class="f-class" id="contact"></div>       
 
-        <div class="contact" id="contact" data-aos="fade-up">
+        <div class="contact" data-aos="fade-up" >
             <h3>Send me a message!</h3>
             <p>Would you like to reach out to me? Go ahead.</p>
 
@@ -251,7 +255,7 @@
 
     </main>
 
-    <footer>
+    <footer data-aos="fade-in">
         <p class="name">Dapo Ola-Olatunji</p>
         <p>&copy; Copyright 2022</p>
         <div class="links">
@@ -272,6 +276,7 @@
           delay: 300
       });
     </script>
+
 
 </body>
 </html>

@@ -38,11 +38,14 @@ body {
 body.scroll {
     overflow: hidden;
 }
+.f-class {
+    height: 1px;
+}
 
 a {
     color: #eee;
 }
-
+ 
 .links a {
     margin-left: 1.5rem;
     font-size: 1.2rem;
@@ -316,7 +319,7 @@ a {
     }
 }
 
-#about {
+.about {
     padding: 1.2rem 5rem;
     text-align: center;
 
@@ -488,7 +491,7 @@ footer {
     .feature {
         padding: 10rem 2rem 0 2rem;
     }
-    #about {
+    .about {
         padding: 1.2rem 3rem;
     }
     footer {
@@ -680,7 +683,7 @@ footer {
             font-size: 12.86vw;
         }
     }
-    #about {
+    .about {
         padding: 1.2rem 1.5rem;
     }
     footer {

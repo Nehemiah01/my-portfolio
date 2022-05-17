@@ -20,26 +20,3 @@ for (let i = 0; i<mbLinks.length; i++) {
         mobileFunctions()
     })
 }
-
-
-//SCROLL-REVEAL
-
-// ScrollReveal({ 
-//     delay: 500,
-//     duration: 1000,
-//     viewFactor: 0.2
-//     // reset: true,
-//     // desktop: false
-// });
-
-// var slideUp = {
-//     distance: '150%',
-//     origin: 'bottom',
-//     opacity: 0
-// };
-
-// ScrollReveal().reveal('.feature .card', slideUp)
-
-// console.log(ScrollReveal().store)
-// // ScrollReveal().reveal(body)
-// // ScrollReveal().reveal()
