@@ -59,7 +59,7 @@ a {
 .pg-1 {
     padding: $large-screen-padding;
     height: 100vh;
-    background: #0b0b0b;   
+    background: #0b0b0b;  
     
     nav {
         display: flex;
@@ -89,25 +89,26 @@ a {
 
             .bar {
                 display: block;
-                width: 26px;
-                height: 3px;
+                width: 28px;
+                height: 2px;
                 border-radius: 5px;
-                margin: 5px 0.2rem;
+                margin: 7px 0.2rem;
                 background: #eee;
                 cursor: pointer;
                 transition: transform 0.3s ease-out;
             }
-            
+            .bar:last-of-type {
+                width: 20px;
+                margin-left: auto;
+            }
+
             &.cancel .bar:first-child {
                 width: 26px;
-                transform: translateY(8px) rotate(45deg);
-            }
-            &.cancel .bar:nth-child(2) {
-                opacity: 0;
+                transform: translateY(4.5px) rotate(45deg);
             }
             &.cancel .bar:last-child {
                 width: 26px;
-                transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-4.5px) rotate(-45deg);
             }
         }
     }
@@ -117,10 +118,6 @@ a {
         justify-content: space-around;
         width: auto;
         transition: filter 0.8s ease;
-
-        &.blur {
-            filter: blur(3px);
-        }
         
         .image {
             height: 300px;
@@ -195,8 +192,26 @@ a {
 
 .cta {
     margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    #resume {
+        display: inline-block;
+        width: fit-content;
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        border-radius: 12px;
+        background-color: rgba(25, 25, 25, 0.6);
+        scale: 0.6;
+        font-size: 0.85rem;
 
-    p{
+        &:hover {
+            background-color: rgba(25, 25, 25, 0.3);
+            background: linear-gradient(135deg, #4158D0 0%, #C850C0 60%);
+        }
+    }
+
+    p {
         display: inline;
         font-weight: bold;
     }
@@ -462,7 +477,6 @@ a {
             white-space:pre;
         }
         p {
-            // margin: 0 0 0 1rem;
             display: inline-block;
             margin-left: 0.8rem;
             transform: translateY(-0.1rem);
@@ -503,6 +517,11 @@ footer {
     .mobile {
         display: unset;
     }
+    
+    #daps {
+        overflow: hidden !important;
+        // display: none;
+    }
     .pg-1 {
         position: relative;
         
@@ -518,6 +537,10 @@ footer {
             }
             .cta {
                 text-align: center;
+
+                #resume {
+                    margin: 1.5rem auto 0;
+                }
             }
             
             .image {
@@ -529,7 +552,6 @@ footer {
                 margin: auto;
                 display: block;
                 position: unset;
-                // flex: 2;
 
                 &:first-of-type {
                     width: unset;
@@ -630,8 +652,13 @@ footer {
         left: 75vw;
         overflow: hidden !important;
     }
+
 }
 @media screen and (max-width:600px) {
+
+    .pg-1 .just-flex.blur, .second.blur, .first.blur {
+        filter: blur(6px);
+    }
     .mobile-nav {
         display: unset;
         z-index: 2;

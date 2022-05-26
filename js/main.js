@@ -1,13 +1,17 @@
 const hamburger = document.querySelector('.hamburger-menu')
 const mobileInfo = document.querySelector('.mobile-info')
 const body = document.querySelector('body')
-const page = document.querySelector('.just-flex')
+const element1 = document.querySelector('.second')
+const element2 = document.querySelector('.first')
+const element3 = document.querySelector('.pg-1 .just-flex')
 
 function mobileFunctions() {
     hamburger.classList.toggle('cancel')
     mobileInfo.classList.toggle('display')
     body.classList.toggle('scroll')
-    page.classList.toggle('blur')
+    element1.classList.toggle('blur')
+    element2.classList.toggle('blur')
+    element3.classList.toggle('blur')
 }
 
 hamburger.addEventListener('click', toggler = (e) => {

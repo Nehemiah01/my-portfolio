@@ -109,10 +109,10 @@ a {
 
 .pg-1 nav .hamburger-menu .bar {
   display: block;
-  width: 26px;
-  height: 3px;
+  width: 28px;
+  height: 2px;
   border-radius: 5px;
-  margin: 5px 0.2rem;
+  margin: 7px 0.2rem;
   background: #eee;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -121,20 +121,21 @@ a {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-.pg-1 nav .hamburger-menu.cancel .bar:first-child {
-  width: 26px;
-  -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
+.pg-1 nav .hamburger-menu .bar:last-of-type {
+  width: 20px;
+  margin-left: auto;
 }
 
-.pg-1 nav .hamburger-menu.cancel .bar:nth-child(2) {
-  opacity: 0;
+.pg-1 nav .hamburger-menu.cancel .bar:first-child {
+  width: 26px;
+  -webkit-transform: translateY(4.5px) rotate(45deg);
+          transform: translateY(4.5px) rotate(45deg);
 }
 
 .pg-1 nav .hamburger-menu.cancel .bar:last-child {
   width: 26px;
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
+  -webkit-transform: translateY(-4.5px) rotate(-45deg);
+          transform: translateY(-4.5px) rotate(-45deg);
 }
 
 .pg-1 .just-flex {
@@ -148,11 +149,6 @@ a {
   transition: -webkit-filter 0.8s ease;
   transition: filter 0.8s ease;
   transition: filter 0.8s ease, -webkit-filter 0.8s ease;
-}
-
-.pg-1 .just-flex.blur {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
 }
 
 .pg-1 .just-flex .image {
@@ -231,6 +227,31 @@ a {
 
 .cta {
   margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cta #resume {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(25, 25, 25, 0.6);
+  scale: 0.6;
+  font-size: 0.85rem;
+}
+
+.cta #resume:hover {
+  background-color: rgba(25, 25, 25, 0.3);
+  background: linear-gradient(135deg, #4158D0 0%, #C850C0 60%);
 }
 
 .cta p {
@@ -597,6 +618,9 @@ footer p:nth-child(2) {
   .mobile {
     display: unset;
   }
+  #daps {
+    overflow: hidden !important;
+  }
   .pg-1 {
     position: relative;
   }
@@ -611,6 +635,9 @@ footer p:nth-child(2) {
   }
   .pg-1 .just-flex .cta {
     text-align: center;
+  }
+  .pg-1 .just-flex .cta #resume {
+    margin: 1.5rem auto 0;
   }
   .pg-1 .just-flex .image {
     display: none;
@@ -776,6 +803,10 @@ footer p:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
+  .pg-1 .just-flex.blur, .second.blur, .first.blur {
+    -webkit-filter: blur(6px);
+            filter: blur(6px);
+  }
   .mobile-nav {
     display: unset;
     z-index: 2;
