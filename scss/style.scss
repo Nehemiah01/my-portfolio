@@ -51,8 +51,8 @@ a {
     font-size: 1.2rem;
 
     &:hover {
-        transform: scale(1.15);
-        transition: transform ease 0.3s;
+        font-size: 1.45rem;
+        transition: font ease 0.3s;
     }
 }
 

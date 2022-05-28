@@ -55,12 +55,9 @@ a {
 }
 
 .links a:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: -webkit-transform ease 0.3s;
-  transition: -webkit-transform ease 0.3s;
-  transition: transform ease 0.3s;
-  transition: transform ease 0.3s, -webkit-transform ease 0.3s;
+  font-size: 1.45rem;
+  -webkit-transition: font ease 0.3s;
+  transition: font ease 0.3s;
 }
 
 .pg-1 {
