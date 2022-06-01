@@ -517,10 +517,12 @@ footer {
     .mobile {
         display: unset;
     }
-    
-    #daps {
+    .relative {
+        position: absolute;
+        top: 10vh;
+        height: 90vh;
         overflow: hidden !important;
-        // display: none;
+
     }
     .pg-1 {
         position: relative;

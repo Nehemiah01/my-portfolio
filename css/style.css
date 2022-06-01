@@ -615,7 +615,10 @@ footer p:nth-child(2) {
   .mobile {
     display: unset;
   }
-  #daps {
+  .relative {
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
     overflow: hidden !important;
   }
   .pg-1 {
