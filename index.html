@@ -6,6 +6,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/animojiii.png">
     
+    <link rel="stylesheet" href="pointer_/pointer.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -281,14 +283,21 @@
         </div>
     </footer>
 
+    <script src="pointer_/pointer.js"></script>
     <script src="js/main.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          duration: 800,
-          delay: 300
-      });
+        init_pointer({
+        pointerColor: "#5a5858",
+        ringSize: 30,
+        ringClickSize: 10
+        })    
+        
+        AOS.init({
+            duration: 800,
+            delay: 300
+        });
     </script>
 
 </body>

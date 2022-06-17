@@ -271,6 +271,10 @@ a {
   height: max-content;
 }
 
+.proj #pointer-dot, .tab #pointer-dot {
+  border: 2.5px solid #fff;
+}
+
 .proj .project, .tab .project {
   margin: auto 2rem auto 0;
 }
@@ -928,4 +932,8 @@ footer p:nth-child(2) {
   .contact .col:first-of-type div:last-of-type {
     margin-top: 1.5rem;
   }
+}
+
+#pointer-dot {
+  border: 2.5px solid #fff;
 }
