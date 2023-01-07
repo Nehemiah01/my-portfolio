@@ -358,7 +358,7 @@ a {
   filter: drop-shadow(0 0 2em rgba(66, 184, 131, 0.6666666667));
 }
 .about .stack .tool.sass:hover {
-  filter: drop-shadow(0 0 2em #cf649a);
+  filter: drop-shadow(0 0 2em rgb(227, 119, 173));
 }
 .about .stack .tool.tailwind:hover {
   filter: drop-shadow(0 0 2em #07b6d5);

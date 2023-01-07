@@ -400,7 +400,7 @@ a {
                 filter: drop-shadow(0 0 2em #42b883aa);
             }
             &.sass:hover {
-                filter: drop-shadow(0 0 2em #cf649a);
+                filter: drop-shadow(0 0 2em rgb(227, 119, 173));
             }
             &.tailwind:hover {
                 filter: drop-shadow(0 0 2em #07b6d5);
