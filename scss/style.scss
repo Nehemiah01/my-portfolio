@@ -343,6 +343,9 @@ a {
     padding: 1.2rem 5rem;
     text-align: center;
 
+    background: #0b0b0b;
+    color: #eee;
+
     h3 {
         margin: 2rem 0 0.2rem 0;
         font-size: 1.22rem;
@@ -361,7 +364,7 @@ a {
 
     .stack {
         h4 {
-            margin: 2rem 0 1rem;
+            margin: 3.5rem 0 0;
         }
         .skills {
             display: flex;
@@ -369,18 +372,45 @@ a {
             flex-wrap: wrap;
         }
         .tool {
-            background-color: #fff;
-            color: #333;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            // background-color: #fff;
+            // color: #333;
+            // border-radius: 10px;
+            // box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
             padding: 20px;
             margin: 18px 10px 40px;
             transition: transform 0.2s ease-in;
 
             &:hover {
                 transform: translateY(-15px);
+
+                
             }
             
+            &.html:hover {
+                filter: drop-shadow(0 0 2em #ff5722d6);
+            }
+            &.css:hover {
+                filter: drop-shadow(0 0 2em #2196f3bd);
+            }
+            &.js:hover {
+                filter: drop-shadow(0 0 2em hsl(53, 93%, 25%));
+            }
+            &.vue:hover {
+                filter: drop-shadow(0 0 2em #42b883aa);
+            }
+            &.sass:hover {
+                filter: drop-shadow(0 0 2em #cf649a);
+            }
+            &.tailwind:hover {
+                filter: drop-shadow(0 0 2em #07b6d5);
+            }
+            &.firebase:hover {
+                filter: drop-shadow(0 0 2em #ffca28bf);
+            } 
+            &.vitest:hover {
+                filter: drop-shadow(0 0 2em #b9ca8b);
+            } 
             p{
                 font-size: 20px;
                 font-weight: 600;
@@ -719,12 +749,14 @@ footer {
     }
     .about {
         padding: 1.2rem 1.5rem;
+
+        
     }
     footer {
         padding: 2rem 1.5rem;
         flex-direction: column;
         place-items: center;
-
+        
         * {
             margin: 1rem 0;
         }
