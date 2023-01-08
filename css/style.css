@@ -17,6 +17,7 @@ img {
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
   transition: scroll 2s ease-in-out;
 }

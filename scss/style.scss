@@ -19,6 +19,8 @@ img {
     display: none;
 }
 body {
+    width: 100vw; //newly added
+    
     overflow-x: hidden;
     transition: scroll 2s ease-in-out;
 
