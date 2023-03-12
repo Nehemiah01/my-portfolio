@@ -58,6 +58,7 @@ a {
   padding: 1.5rem 5rem;
   height: 100vh;
   background: #0b0b0b;
+  overflow: hidden;
 }
 .pg-1 nav {
   display: flex;
@@ -80,10 +81,8 @@ a {
   -webkit-background-clip: text;
 }
 .pg-1 nav .hamburger-menu {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -152,19 +151,7 @@ a {
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-animation: rainbow 10s linear infinite;
-          animation: rainbow 10s linear infinite;
-}
-@-webkit-keyframes rainbow {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
+  animation: rainbow 10s linear infinite;
 }
 @keyframes rainbow {
   0% {
@@ -185,7 +172,6 @@ a {
 }
 .cta #resume {
   display: inline-block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 1.5rem;
@@ -210,7 +196,6 @@ a {
   grid-template-columns: 40% auto;
   justify-content: space-between;
   font-size: 1.2rem;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -353,7 +338,7 @@ a {
   filter: drop-shadow(0 0 2em rgba(33, 150, 243, 0.7411764706));
 }
 .about .stack .tool.js:hover {
-  filter: drop-shadow(0 0 2em hsl(53deg, 93%, 25%));
+  filter: drop-shadow(0 0 2em hsl(53, 93%, 25%));
 }
 .about .stack .tool.vue:hover {
   filter: drop-shadow(0 0 2em rgba(66, 184, 131, 0.6666666667));
@@ -493,8 +478,12 @@ footer p:nth-child(2) {
   .relative {
     position: absolute;
     top: 10vh;
-    height: 90vh;
     overflow: hidden !important;
+  }
+  .relative.pos {
+    position: unset;
+    height: unset;
+    top: unset;
   }
   .pg-1 {
     position: relative;
@@ -534,14 +523,12 @@ footer p:nth-child(2) {
   #ast-1 {
     top: 10vh;
     left: 10vw;
-    -webkit-animation: sideway 3s infinite ease;
-            animation: sideway 3s infinite ease;
+    animation: sideway 3s infinite ease;
   }
   #ast-2 {
     top: 70vh;
     left: 80vw;
-    -webkit-animation: rotate 0.7s infinite linear;
-            animation: rotate 0.7s infinite linear;
+    animation: rotate 0.7s infinite linear;
   }
   #ast-3 {
     top: 34vh;
@@ -551,21 +538,9 @@ footer p:nth-child(2) {
   #ast-4 {
     top: 60vh;
     left: 10vw;
-    -webkit-animation: scale 4s infinite linear;
-            animation: scale 4s infinite linear;
+    animation: scale 4s infinite linear;
     transform-style: preserve-3d;
     transform: scale(0.8);
-  }
-  @-webkit-keyframes sideway {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5rem);
-    }
-    100% {
-      transform: translateX(0);
-    }
   }
   @keyframes sideway {
     0% {
@@ -578,31 +553,12 @@ footer p:nth-child(2) {
       transform: translateX(0);
     }
   }
-  @-webkit-keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(359deg);
-    }
-  }
   @keyframes rotate {
     0% {
       transform: rotate(0);
     }
     100% {
       transform: rotate(359deg);
-    }
-  }
-  @-webkit-keyframes scale {
-    0% {
-      transform: scale(0.6);
-    }
-    50% {
-      transform: scale(0.8);
-    }
-    100% {
-      transform: scale(0.59);
     }
   }
   @keyframes scale {

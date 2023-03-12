@@ -63,6 +63,7 @@ a {
     padding: $large-screen-padding;
     height: 100vh;
     background: #0b0b0b;  
+    overflow: hidden;
     
     nav {
         display: flex;
@@ -557,13 +558,21 @@ footer {
     .relative {
         position: absolute;
         top: 10vh;
-        height: 90vh;
+        // height: 90vh;
         overflow: hidden !important;
 
+        &.pos {
+            position: unset;
+            height: unset;
+            top: unset;
+            
+        }
     }
+ 
     .pg-1 {
         position: relative;
-        
+        // position: absolute; 
+                
         nav .links {
             display: none;
         }

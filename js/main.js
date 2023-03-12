@@ -4,6 +4,7 @@ const body = document.querySelector('body')
 const element1 = document.querySelector('.second')
 const element2 = document.querySelector('.first')
 const element3 = document.querySelector('.pg-1 .just-flex')
+const relative = document.querySelector('.relative')
 
 function mobileFunctions() {
     hamburger.classList.toggle('cancel')
@@ -12,6 +13,8 @@ function mobileFunctions() {
     element1.classList.toggle('blur')
     element2.classList.toggle('blur')
     element3.classList.toggle('blur')
+    relative.classList.toggle('pos')
+    // relative.style.display = 'none'
 }
 
 hamburger.addEventListener('click', toggler = (e) => {
