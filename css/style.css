@@ -478,7 +478,6 @@ footer p:nth-child(2) {
   .relative {
     position: absolute;
     top: 10vh;
-    overflow: hidden !important;
   }
   .relative.pos {
     position: unset;
